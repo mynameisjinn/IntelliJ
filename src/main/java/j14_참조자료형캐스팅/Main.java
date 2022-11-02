@@ -10,9 +10,9 @@ public class Main {
 
         CentralControlArray centralControlArray = new CentralControlArray(new Power[5]);
 
-        CentralControlArray.addDevice(computer);
-        CentralControlArray.addDevice(speaker);
-        CentralControlArray.addDevice(led);
+//        CentralControlArray.addDevice(computer);
+//        CentralControlArray.addDevice(speaker);
+//        CentralControlArray.addDevice(led);
 
         centralControlArray.powerOn();
         System.out.println("====================");
