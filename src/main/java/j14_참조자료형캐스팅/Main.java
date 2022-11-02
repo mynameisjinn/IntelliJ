@@ -8,11 +8,14 @@ public class Main {
         LED led = new LED();
         Speaker speaker = new Speaker();
 
-        CentralControl centralControl = new CentralControl(computer,
-                led, speaker);
+        CentralControlArray centralControlArray = new CentralControlArray(new Power[5]);
 
-        centralControl.powerOn();
+        CentralControlArray.addDevice(computer);
+        CentralControlArray.addDevice(speaker);
+        CentralControlArray.addDevice(led);
+
+        centralControlArray.powerOn();
         System.out.println("====================");
-        centralControl.powerOff();
+        centralControlArray.powerOff();
     }
 }
