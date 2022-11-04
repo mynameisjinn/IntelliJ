@@ -10,8 +10,8 @@ public class StringEquals {
         System.out.println(name1+","+name2+","+name3);
         System.out.println(name1 == name2);
         System.out.println(name1 == name3);
-        System.out.println(name3 == name4);
-        System.out.println(name1.equals(name3));
+        System.out.println(name3 == name4); // 주소값 비교
+        System.out.println(name1.equals(name3)); // 문자열 값 비교
 
     }
 }
