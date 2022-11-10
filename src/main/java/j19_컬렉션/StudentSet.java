@@ -37,14 +37,24 @@ public class StudentSet {
         String reName = "설민수";
 
         for( Student student : students) {
-            if(students.contains(searchId)){
-//                students.removeAll(student);
+            if(student.getId() == searchId){
+                student.setName(reName);
                 break;
             }
         }
         System.out.println(students);
 
         System.out.println("3. 20220001 학번이 존재하면 해당 학생을 삭제");
+
+        int searchId2 = 20220001;
+
+        for( Student student : students) {
+            if(student.getId() == searchId2){
+                students.remove(student);
+                break;
+            }
+        }
+        System.out.println(students);
 
 
     }
