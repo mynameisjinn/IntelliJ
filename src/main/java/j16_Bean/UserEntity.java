@@ -17,10 +17,10 @@ public class UserEntity {
     private String email;
     private String name;
 
+    // 생성자 정의 - 기본 생성자, AllArgsConstructor 이렇게 2개 만들어줌
     public UserEntity(){};
 
-    public UserEntity(String username, String password,
-                      String email, String name){
+    public UserEntity(String username, String password, String email, String name){
         this.username = username;
         this.password = password;
         this.email = email;
@@ -82,3 +82,4 @@ public class UserEntity {
                 '}';
     }
 }
+

@@ -21,7 +21,7 @@ public class ProductMain {
 //        products[2] = new Product("스타벅스 블랙 텀블러"+3);
 //        products[3] = new Product("스타벅스 블랙 텀블러"+4);
 //        products[4] = new Product("스타벅스 블랙 텀블러"+5);
-
+//
         for(int i = 0; i < products.length; i++){
             System.out.println(products[i]);
         }
